@@ -1,0 +1,27 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "To do lis app with database connection",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nazim806/ToDoList.git"
+  },
+  "keywords": [
+    "Todo",
+    "list"
+  ],
+  "author": "nazim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nazim806/ToDoList/issues"
+  },
+  "homepage": "https://github.com/nazim806/ToDoList#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
