@@ -4,24 +4,23 @@ const ejs = require("ejs");
 
 const app = express();
 
-var items = [];
+let items = ["Buy grocery", "Cook food", "Enjoy food"];
 
 app.set("view engine", "ejs");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", function (req, res) {
-  var today = new Date();
+  let today = new Date();
   var currentDay = today.getDay();
-  var day = "";
 
-  var options = {
+  let options = {
     weekday: "long",
     day: "numeric",
     month: "long",
   };
 
-  var day = today.toLocaleDateString("en-US", options);
+  let day = today.toLocaleDateString("en-US", options);
 
   //   switch (currentDay) {
   //     case 0:
@@ -54,7 +53,7 @@ app.get("/", function (req, res) {
 });
 
 app.post("/", function (req, res) {
-  var item = req.body.newItem;
+  let item = req.body.newItem;
   items.push(item);
   res.redirect("/");
 });

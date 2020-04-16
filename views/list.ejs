@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
@@ -13,15 +14,9 @@
 
     <ul>
 
-        <li>Buy grocery</li>
-        <li>Cook food</li>
-        <li>Enjoy Food</li>
-
         <% for (let i=0; i< newListItems.length; i++){ %>
         <li> <%= newListItems[i] %> </li>
         <% } %>
-
-
     </ul>
 
     <form class="" action="/" method="post">
