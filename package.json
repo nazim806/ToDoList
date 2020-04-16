@@ -22,6 +22,7 @@
   "homepage": "https://github.com/nazim806/ToDoList#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "ejs": "^3.0.2",
     "express": "^4.17.1"
   }
 }
