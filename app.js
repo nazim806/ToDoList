@@ -57,13 +57,13 @@ app.get("/", function (req, res) {
 
 app.post("/", function (req, res) {
   const itemName = req.body.newItem;
-  
-  const item = new Item ({
-    name:itemName
+
+  const item = new Item({
+    name: itemName,
   });
 
   item.save();
-  res.redirect("/");  
+  res.redirect("/");
 });
 
 app.get("/work", function (req, res) {
@@ -74,6 +74,18 @@ app.post("/work", function (req, res) {
   const item = req.body.newItem;
   workItems.push(item);
   res.redirect("/work");
+});
+
+app.post("/delete", function (req, res) {
+  const checkedItemId = req.body.checkbox;
+
+  Item.findByIdAndRemove(checkedItemId, function (err) {
+    if (!err) {
+      console.log("Succesfully deleted checked item.");
+
+      res.redirect("/");
+    }
+  });
 });
 
 app.get("/about", function (req, res) {
