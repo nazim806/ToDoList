@@ -7,6 +7,8 @@ const ejs = require("ejs");
 // const items = ["Buy grocery", "Cook food", "Enjoy food"];
 // const workItems = [];
 
+const app = express();
+
 app.set("view engine", "ejs");
 
 app.use(bodyParser.urlencoded({ extended: true }));
