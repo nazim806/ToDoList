@@ -2,6 +2,8 @@
 
 Using EJS (embedded javascript templating) with express to build a todo list.
 
+Steps:
+
 Create EJS template
 
 Run code inside EJS template
@@ -19,5 +21,22 @@ Create custom lists using express route parameters
 Add new items to the custom list.
 
 Delete items from custom todo lists.
+
+Technology used:
+
+HTML
+
+CSS
+
+Javascript
+
+Node.js
+
+Express
+
+Body-parser
+
+lodash
+
 
 
