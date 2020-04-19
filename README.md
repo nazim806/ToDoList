@@ -38,5 +38,7 @@ Body-parser
 
 lodash
 
+Deployed on Heroku.
+
 
 
