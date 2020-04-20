@@ -4,6 +4,8 @@ const mongoose = require("mongoose");
 const _ = require("lodash");
 const ejs = require("ejs");
 
+require("dotenv").config();
+
 // const items = ["Buy grocery", "Cook food", "Enjoy food"];
 // const workItems = [];
 
@@ -14,13 +16,12 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect(
-  "mongodb+srv://nazimbd:Path2Hope@$@cluster0-a0fnm.mongodb.net/todolistDB",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
+const uri = process.env.ATLAS_URI;
+
+mongoose.connect(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 const itemsSchema = {
   name: String,
