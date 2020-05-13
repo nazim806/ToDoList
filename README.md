@@ -34,6 +34,8 @@ Node.js
 
 Express
 
+MongoDB, mongoose
+
 Body-parser
 
 lodash
