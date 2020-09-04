@@ -22,7 +22,7 @@ Add new items to the custom list.
 
 Delete items from custom todo lists.
 
-Technology used:
+**Technologies used:**
 
 HTML
 
@@ -40,7 +40,7 @@ Body-parser
 
 lodash
 
-Deployed on Heroku.
+Heroku.
 
 
 
